@@ -1,4 +1,76 @@
 .profile {
   background-image: url('../assets/backgroundIntro.png');
+  background-position: center;
   background-size: cover;
+
+  display: grid;
+  margin-top: 120px;
+  height: 510px;
+
+  header {
+    text-align: center;
+
+    .picture {
+      img {
+        margin-bottom: 56px;
+        height: 112px;
+        width: 112px;
+     }
+    }
+    
+    .information {
+      display: grid;
+      justify-content: center;
+      gap: 20px;
+
+      .titles {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 16px;
+        
+        h1 {
+          color: var(--gray-100);
+          font: var(--title-lg);
+        }
+
+        h2 {
+          font: var(--subtitle);
+
+          span {
+            color: var(--red);
+          }
+        }
+      }
+
+      p {
+        color: var(--gray-300);
+        font: var(--text-sm);
+
+        width: 680px;
+      }
+    }
+
+    
+  }
+
+  .tags {
+    align-self: baseline;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+    .tag {
+      align-items: center;
+      background-color: var(--gray-400);
+      border-radius: 30px;
+      display: flex;
+      gap: 8px;
+      padding: 8px 16px;
+
+      img {
+        height: 19px;
+        width: 19px;
+      }
+    }
+  }
 }
