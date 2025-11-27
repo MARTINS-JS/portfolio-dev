@@ -37,6 +37,28 @@
   margin-inline: auto;
 }
 
+.wrapper {
+  margin-top: 45px;
+  margin-bottom: 60px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    
+    .vector {
+      display: block;
+
+      background-image: url('../assets/icons/vector.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
 body {
   color: var(--gray-200);
   background-color: var(--gray-500);
